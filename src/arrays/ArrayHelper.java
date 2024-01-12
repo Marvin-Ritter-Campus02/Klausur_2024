@@ -15,11 +15,10 @@ public class ArrayHelper {
     public static int findIndex(int[] numbers, int number) {
         for (int i = 0; i < numbers.length; i++) {
             if (number == numbers[i]) {
-                System.out.println(findIndex(numbers, numbers[i]));
-            } else
-                return -1;
+                return i;
+            }
         }
-        return number;
+        return -1;
     }
 
     public static int calcSum(int[] numbers) {

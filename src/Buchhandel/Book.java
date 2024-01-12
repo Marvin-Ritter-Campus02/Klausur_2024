@@ -22,6 +22,7 @@ public abstract   class Book {
             case "Krimi":
             case "Kinderbuch":
                 this.category = category;
+                break;
             default:
                 this.category = "Sonstiges";
         }
@@ -33,18 +34,17 @@ public abstract   class Book {
     }
 
     public double calculateRating() {
-
         double sumStars = 0;
+
         for (Rating rating : ratings) {
-            if (rating.getStars()==0){
+            if (rating.getStars() == 0) {
                 return -1;
-
-        }else if (rating.getStars()!=0) {
-                sumStars+=rating.getStars();
+            } else {
+                sumStars += rating.getStars();
             }
-    }
+        }
 
-        return sumStars/ratings.size();
+        return sumStars / ratings.size();
     }
 
     public abstract String printPresentationPage();

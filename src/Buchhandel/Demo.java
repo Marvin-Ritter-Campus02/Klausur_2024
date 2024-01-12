@@ -16,7 +16,14 @@ public class Demo {
         printedBook1.printPresentationPage();
         System.out.println();
         digitalBook1.printPresentationPage();
+        System.out.println();
+        BookStoreAnalyzer bookStoreAnalyzer = new BookStoreAnalyzer();
 
+        bookStoreAnalyzer.addBook(printedBook1);
+        bookStoreAnalyzer.addBook(printedBook1);
+        bookStoreAnalyzer.addBook(digitalBook1);
+
+        System.out.println(bookStoreAnalyzer.getCountBooksInCategory());
 
 
     }

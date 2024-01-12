@@ -12,7 +12,7 @@ public class Array_Demo {
         System.out.println(Arrays.toString(ArrayHelper.reverse(array1)));
         System.out.println(Arrays.toString(ArrayHelper.reverse(array2)));
 
-        System.out.println(ArrayHelper.findIndex(array1,2));
+        System.out.println(ArrayHelper.findIndex(array1,9));
 
         System.out.println(ArrayHelper.calcSum(array1));
         System.out.println(ArrayHelper.calcSum(array2));
